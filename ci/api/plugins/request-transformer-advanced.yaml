@@ -1,0 +1,9 @@
+plugins:
+  - name: request-transformer-advanced
+    service: ${service_name}
+    config:
+      add:
+        headers:
+        - x-kong-kdf:hello
+
+

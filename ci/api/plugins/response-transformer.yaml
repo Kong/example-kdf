@@ -1,0 +1,9 @@
+plugins:
+    - name: response-transformer-advanced
+      service: ${service_name}
+      config:
+        remove:
+          headers:
+          - X-Powered-By
+          - Server
+          - X-AspNet-Version

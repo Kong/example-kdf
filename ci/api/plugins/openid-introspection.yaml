@@ -1,0 +1,25 @@
+plugins:
+  - name: openid-connect
+    service: ${service_name}
+    config:
+      audience_claim:
+      - aud
+      auth_methods:
+      - introspection
+      cache_introspection: true
+      cache_token_exchange: true
+      cache_tokens: true
+      cache_ttl: 3600
+      cache_user_info: true
+      client_id:
+      - ${client_id}
+      client_secret:
+      - ${client_secret}
+      introspection_endpoint: ${introspection_endpoint}
+      issuer: ${issuer}
+      verify_claims: true
+      verify_signature: true
+      consumer_claim:
+      - application_id
+      consumer_by:
+      - custom_id

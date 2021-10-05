@@ -1,0 +1,8 @@
+plugins:
+- name: application-registration
+  service: ${service_name}
+  config:
+    auto_approve: true
+    description: My ${service_name} example API
+    display_name: My UI friendly name for ${service_name}
+    show_issuer: false

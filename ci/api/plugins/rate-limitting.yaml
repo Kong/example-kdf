@@ -1,0 +1,13 @@
+plugins:
+  - name: rate-limiting-advanced
+    service: ${service_name}
+    config:
+      strategy: redis
+      redis:
+        host: ${redis_host}
+        port: ${redis_port}
+      limit:
+      - 10
+      window_size:
+      - 10
+      sync_rate: 1
