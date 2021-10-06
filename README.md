@@ -1,4 +1,4 @@
-# Lego Kong Delivery Framework
+# Example Kong Delivery Framework
 
 ## KDF Repository Overview
 
